@@ -1,0 +1,23 @@
+{
+  "name": "@neykoor/fluent-ffmpeg",
+  "version": "1.0.0",
+  "description": "Minimal TypeScript ffmpeg command builder",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.5.0"
+  },
+  "license": "MIT",
+  "author": "Neykoor"
+}
