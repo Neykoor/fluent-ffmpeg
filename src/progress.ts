@@ -44,7 +44,7 @@ function parseProgressLine(line: string): Record<string, string> | null {
 
 export function extractProgress(line: string, totalDurationSeconds?: number): ProgressInfo | null {
   const raw = parseProgressLine(line);
-  if (!raw) return null;
+  if (!raw || !raw.time) return null;
 
   const info: ProgressInfo = {
     frames: parseInt(raw.frame, 10),
