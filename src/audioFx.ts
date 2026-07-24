@@ -1,4 +1,8 @@
 export function buildAtempoChain(factor: number): string {
+  if (!(factor > 0)) {
+    throw new Error('setSpeed factor must be greater than 0');
+  }
+
   const filters: string[] = [];
   let remaining = factor;
 
